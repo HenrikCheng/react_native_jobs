@@ -21,15 +21,14 @@ const useFetch = (endpoint, query) => {
     setIsLoading(true);
 
     try {
-      const response = await axios.request(options);
-
-      setData(response.data.data);
-      setIsLoading(false);
-    } catch (error) {
+      // const response = await axios.request(options);
+      // setData(response.data.data);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       setData(mockedUsers[1].data);
       setIsLoading(false);
-      // setError(error);
-      // console.log(error);
+    } catch (error) {
+      setError(error);
+      console.log(error);
     } finally {
       setIsLoading(false);
     }
