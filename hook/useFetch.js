@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+const mockedUsers = require("../mockedUsers.json");
 
 const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
@@ -9,11 +10,11 @@ const useFetch = (endpoint, query) => {
   const options = {
     method: "GET",
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
+    params: { ...query },
     headers: {
-      "X-RapidAPI-Key": '',
+      "X-RapidAPI-Key": "0eea6b1575msh04d67f0026cae16p1a9e14jsnce1fc4cd57a3_",
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     },
-    params: { ...query },
   };
 
   const fetchData = async () => {
@@ -25,8 +26,10 @@ const useFetch = (endpoint, query) => {
       setData(response.data.data);
       setIsLoading(false);
     } catch (error) {
-      setError(error);
-      console.log(error)
+      setData(mockedUsers[1].data);
+      setIsLoading(false);
+      // setError(error);
+      // console.log(error);
     } finally {
       setIsLoading(false);
     }
