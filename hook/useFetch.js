@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 const mockedUsers = require("../mockedUsers.json");
+const mockedDetails = require("../mockedDetails.json");
 
 const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
@@ -23,8 +24,14 @@ const useFetch = (endpoint, query) => {
     try {
       // const response = await axios.request(options);
       // setData(response.data.data);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setData(mockedUsers[1].data);
+
+      if (endpoint === "search") {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setData(mockedUsers[1].data);
+      } else if (endpoint === "job-details") {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setData(mockedDetails.data);
+      }
       setIsLoading(false);
     } catch (error) {
       setError(error);

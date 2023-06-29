@@ -18,6 +18,7 @@ const Popularjobs = () => {
 
   const { data, isLoading, error } = useFetch("search", {
     query: "React developer in Stockholm, Sweden",
+    page: "1",
     num_pages: "1",
   });
 

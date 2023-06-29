@@ -1,0 +1,74 @@
+{
+  "status": "OK",
+  "request_id": "9a20827f-4cb5-4330-a03a-f9b7cb1b5bf8",
+  "parameters": {
+    "job_id": "jzkc_amQEroAAAAAAAAAAA==",
+    "extended_publisher_details": false
+  },
+  "data": [
+    {
+      "employer_name": "NoA Ignite Sweden",
+      "employer_logo": null,
+      "employer_website": null,
+      "employer_company_type": null,
+      "job_publisher": "NoA Ignite Sweden",
+      "job_id": "jzkc_amQEroAAAAAAAAAAA==",
+      "job_employment_type": "FULLTIME",
+      "job_title": "React Developer",
+      "job_apply_link": "https://careers.noaignite.com/jobs/1525210-react-developer",
+      "job_apply_is_direct": false,
+      "job_apply_quality_score": 0.9274,
+      "job_description": "We are looking for a React Developer who would like to join us on our journey to shape the future of commerce. At NoA Ignite, you'll work with the most interesting minds in the industry on challenging projects with bold customers like Fjällräven and Our Legacy, always using emotion, design, and an up-to-date tech stack.\n\nNoA Ignite is a place for visionaries, unconventional minds, experienced experts, and change-makers. A place for people that want to fight digital boredom by creating fun, groundbreaking, and ever-changing digital experiences.\n\nAs a front-end developer at NoA Ignite, you will be working with hands-on experience in front-end development and building and maintaining JavaScript applications using React while working in a team. You independently lead the development of new features and enjoy discussing and debating code and solutions with your peers. You will be an integral part of ensuring we evolve as a team and company.\n\nWe are looking for someone who\n• Have great experience in React (experience with Next.js and Material-UI)\n• Is knowledgeable about version control using Git\n• Used to delivering top-quality code and push tech\n• Can run virtual environments\n• Wants to share your knowledge with your team\n• Is curious and continuously strives to learn new things\n• Likes to solve big and small problems in collaboration with others\n\nAt the moment we are in need of someone with at least 4 years of proven work experience to complete our team.\n\nNice to haves\n• Experience with VanillaJS, Headless CMS Systems, and published npm packages\n• Active within the developer community\n• Up to date with the latest JavaScript development\n• Have experience with e-commerce web development.\n\nWhy join NoA Ignite?\n\nAt NoA Ignite, we want to gather the most interesting minds in the industry to shape the future of e-commerce.\n\nWe are technically brave – With our expertise and playful approach to technology, design, and emotion, we create the digital experiences of tomorrow.\n\nAuthentic agency in a strong network – Here, your ideas matter, and being part of the NoA network gives us access to experts in any field to realize them.\n\nTop industry talent and bold clients – Work with the best people and the most interesting minds – colleagues and clients.\n\nA place for development – We value working with customers, colleagues, and projects that ignite sparks and make us grow.\n\nWant to get a feel for the NoA Ignite vibe? Check us out on GitHub!\n\nOur recruitment process\n\nThere is no need for a personal letter or CV/resumé; provide us with the link to your LinkedIn profile and your Github or private portfolio and answer a few initial questions – that's it!\n\nIf you move forward to the next stage, we will use recruitment tests and a code test to ensure a fair selection based on your readiness for the role and your potential to grow with us.\n\nNext up: we want to get to know you, and you will get the chance to get to know us! In the first interview, we will focus on your personality and motivation for this role. The second interview is about your more technical skills and team fit. Before moving to an offer, we will ask for references from previous work experience. Let's do this!",
+      "job_is_remote": false,
+      "job_posted_at_timestamp": 1641978614,
+      "job_posted_at_datetime_utc": "2022-01-12T09:10:14.000Z",
+      "job_city": "Stockholm",
+      "job_state": null,
+      "job_country": "SE",
+      "job_latitude": 59.329323,
+      "job_longitude": 18.06858,
+      "job_benefits": null,
+      "job_google_link": "https://www.google.com/search?gl=us&hl=en&q=jzkc_amQEroAAAAAAAAAAA%3D%3D&cs=1&ibp=htl;jobs#fpstate=tldetail&htivrt=jobs&htiq=jzkc_amQEroAAAAAAAAAAA%3D%3D&htidocid=jzkc_amQEroAAAAAAAAAAA%3D%3D",
+      "job_offer_expiration_datetime_utc": null,
+      "job_offer_expiration_timestamp": null,
+      "job_required_experience": {
+        "no_experience_required": false,
+        "required_experience_in_months": 48,
+        "experience_mentioned": true,
+        "experience_preferred": false
+      },
+      "job_required_skills": null,
+      "job_required_education": {
+        "postgraduate_degree": false,
+        "professional_certification": false,
+        "high_school": false,
+        "associates_degree": false,
+        "bachelors_degree": false,
+        "degree_mentioned": false,
+        "degree_preferred": false,
+        "professional_certification_mentioned": false
+      },
+      "job_experience_in_place_of_education": false,
+      "job_min_salary": null,
+      "job_max_salary": null,
+      "job_salary_currency": null,
+      "job_salary_period": null,
+      "job_highlights": {
+        "qualifications": [
+          "Proficiency in JavaScript, HTML, and CSS",
+          "Strong understanding of React.js and its core principles",
+          "Experience with popular React.js workflows and libraries (such as Redux)",
+          "Familiarity with server-side rendering and front-end build tools (such as Webpack)",
+          "Knowledge of RESTful APIs and integration of backend services"
+        ]
+      },
+      "job_job_title": null,
+      "job_posting_language": "en",
+      "job_onet_soc": "15113400",
+      "job_onet_job_zone": "3",
+      "estimated_salaries": [],
+      "apply_options": [],
+      "employer_reviews": []
+    }
+  ]
+}
