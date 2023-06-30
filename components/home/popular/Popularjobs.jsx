@@ -13,11 +13,11 @@ import { COLORS, SIZES } from "../../../constants";
 import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 import useFetch from "../../../hook/useFetch";
 
-const Popularjobs = () => {
+const Popularjobs = ({ searchTerm }) => {
   const router = useRouter();
 
   const { data, isLoading, error } = useFetch("search", {
-    query: "React developer in Stockholm, Sweden",
+    query: searchTerm,
     page: "1",
     num_pages: "1",
   });

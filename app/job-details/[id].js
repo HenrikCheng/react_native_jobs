@@ -6,6 +6,8 @@ import {
   ScrollView,
   ActivityIndicator,
   RefreshControl,
+  TouchableOpacity,
+  Linking,
 } from "react-native";
 import {
   Stack,
@@ -26,6 +28,7 @@ import {
 
 import { COLORS, icons, SIZES } from "../../constants";
 import useFetch from "../../hook/useFetch";
+import styles from "./id.styles";
 
 const tabs = ["About", "Qualifications", "Responsibilities"];
 
@@ -36,12 +39,19 @@ const JobDetails = () => {
   const { data, isLoading, error, refetch } = useFetch("job-details", {
     job_id: "iXki4pXSSRwAAAAAAAAAAA==",
   });
-  console.log("🚀 ~ file: [id].js:39 ~ data:", data);
 
   const [refreshing, setRefreshing] = useState(false);
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   const onRefresh = () => {};
+
+  const handlePress = () => {
+    Linking.openURL(
+      data[0]?.job_apply_link ||
+        data[0]?.job_google_link ||
+        "https://careers.google.com/jobs/results"
+    );
+  };
 
   const displayTabContent = () => {
     switch (activeTab) {
@@ -49,17 +59,22 @@ const JobDetails = () => {
         return (
           <Specifics
             title={tabs[1]}
-            points={data[0].job_highlights?.qualifications ?? ["N/A"]}
+            points={data[0].job_highlights?.Qualifications ?? ["N/A"]}
           />
         );
         break;
       case tabs[0]:
-        return <Text>About</Text>;
-
+        return (
+          <JobAbout info={data[0].job_description ?? "No data provided"} />
+        );
         break;
       case tabs[2]:
-        return <Text>Responsibilities</Text>;
-
+        return (
+          <Specifics
+            title={tabs[2]}
+            points={data[0].job_highlights?.Responsibilities ?? ["N/A"]}
+          />
+        );
         break;
 
       default:
@@ -70,7 +85,13 @@ const JobDetails = () => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: COLORS.lightWhite,
+        position: "relative",
+      }}
+    >
       <Stack.Screen
         options={{
           headerStyle: {
@@ -111,7 +132,7 @@ const JobDetails = () => {
               companyLogo={data[0].employer_logo}
               jobTitle={data[0].job_title}
               companyName={data[0].employer_name}
-              location={data[0].country}
+              location={data[0].job_country}
             />
 
             <JobTabs
@@ -124,6 +145,18 @@ const JobDetails = () => {
           </View>
         )}
       </ScrollView>
+      {/* <View style={styles.container}>
+        <TouchableOpacity onPress={handlePress} style={styles.btn}>
+          <Text style={styles.btnText}>Apply now</Text>
+        </TouchableOpacity>
+      </View> */}
+      <JobFooter
+        url={
+          data[0]?.job_apply_link ||
+          data[0]?.job_google_link ||
+          "https://careers.google.com/jobs/results"
+        }
+      />
     </SafeAreaView>
   );
 };

@@ -22,10 +22,9 @@ const useFetch = (endpoint, query) => {
     setIsLoading(true);
 
     try {
-      // const response = await axios.request(options);
-      // setData(response.data.data);
-
       if (endpoint === "search") {
+        // const response = await axios.request(options);
+        // setData(response.data.data);
         await new Promise((resolve) => setTimeout(resolve, 1000));
         setData(mockedUsers[1].data);
       } else if (endpoint === "job-details") {

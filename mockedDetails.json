@@ -54,12 +54,21 @@
       "job_salary_currency": null,
       "job_salary_period": null,
       "job_highlights": {
-        "qualifications": [
+        "Qualifications": [
           "Proficiency in JavaScript, HTML, and CSS",
           "Strong understanding of React.js and its core principles",
           "Experience with popular React.js workflows and libraries (such as Redux)",
           "Familiarity with server-side rendering and front-end build tools (such as Webpack)",
           "Knowledge of RESTful APIs and integration of backend services"
+        ],
+        "Responsibilities": [
+          "Develop and maintain responsive and user-friendly web applications using React.js",
+          "Collaborate with design and backend teams to implement and integrate user interfaces",
+          "Write clean, reusable, and efficient code following best practices and coding standards",
+          "Debug and resolve frontend issues and bugs to ensure optimal application performance",
+          "Optimize web applications for maximum speed and scalability",
+          "Conduct thorough testing and quality assurance to ensure the reliability of frontend functionalities",
+          "Stay updated with the latest trends and advancements in frontend development, including new features and frameworks related to React.js"
         ]
       },
       "job_job_title": null,

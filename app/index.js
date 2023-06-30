@@ -33,8 +33,8 @@ const Home = () => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flex: 1, padding: SIZES.medium }}>
           <Welcome searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          <Popularjobs />
-          <Nearbyjobs />
+          <Popularjobs searchTerm={searchTerm} />
+          <Nearbyjobs searchTerm={searchTerm} />
         </View>
       </ScrollView>
     </SafeAreaView>
