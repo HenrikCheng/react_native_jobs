@@ -32,7 +32,15 @@ const Home = () => {
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flex: 1, padding: SIZES.medium }}>
-          <Welcome searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          <Welcome
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            handleClick={() => {
+              if (searchTerm) {
+                router.push(`search/${searchTerm}`);
+              }
+            }}
+          />
           <Popularjobs searchTerm={searchTerm} />
           <Nearbyjobs searchTerm={searchTerm} />
         </View>
